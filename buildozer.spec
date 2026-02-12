@@ -1,6 +1,6 @@
 [app]
-title = Hd video downloader 
-package.name = hd_video_downloader
+title = HD Video Downloader 
+package.name = hdvideodownloader
 package.domain = org.afshan
 source.dir = .
 source.include_exts = py,png,jpg,kv,atlas
