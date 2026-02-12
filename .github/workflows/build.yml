@@ -1,18 +1,16 @@
-name: Build APK
-on: [push, pull_request]
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - name: Build with Buildozer
-        uses: ArtemSerebryakov/buildozer-action@v1
-        with:
-          buildozer_version: stable
-          python_version: 3.11
-      - name: Upload APK
-        uses: actions/upload-artifact@v4
-        with:
-          name: HD-Video-Downloader-APK
-          path: bin/*.apk
-
+[app]
+title = HD Video Downloader
+package.name = hdvideodownloader
+package.domain = org.afshan
+source.dir = .
+source.include_exts = py,png,jpg,kv,atlas
+version = 0.1
+requirements = python3,kivy==2.3.0,kivymd==1.2.0,pillow,requests
+orientation = portrait
+fullscreen = 0
+android.permissions = INTERNET, WRITE_EXTERNAL_STORAGE, READ_EXTERNAL_STORAGE
+android.api = 33
+android.sdk_buildtools = 33.0.0
+android.ndk = 25b
+android.archs = arm64-v8a
+icon.filename = logo.png
