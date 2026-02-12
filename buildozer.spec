@@ -1,5 +1,5 @@
 [app]
-title = HD Video Downloader 
+title = HD Video Downloader
 package.name = hdvideodownloader
 package.domain = org.afshan
 source.dir = .
