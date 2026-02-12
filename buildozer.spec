@@ -13,5 +13,4 @@ android.api = 33
 android.sdk_buildtools = 33.0.0
 android.ndk = 25b
 android.archs = arm64-v8a
-# Yahan tera logo set hai
 icon.filename = logo.png
